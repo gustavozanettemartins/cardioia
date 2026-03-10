@@ -1,0 +1,121 @@
+﻿idade,sexo,pressao_arterial,colesterol,historico_doencas_cardiacas,sintomas,frequencia_cardiaca
+65,Masculino,103/107,190,Sim,Nenhum,61
+68,Masculino,175/87,128,Sim,Nenhum,87
+63,Masculino,171/72,259,Sim,Dor no peito,72
+76,Masculino,120/104,228,Sim,Nenhum,103
+46,Masculino,111/84,144,Sim,Nenhum,71
+76,Masculino,158/94,151,Não,Nenhum,90
+43,Feminino,173/72,137,Sim,Nenhum,73
+30,Masculino,112/84,191,Sim,Dor no peito e falta de ar,65
+48,Feminino,126/102,188,Sim,Fadiga,59
+63,Masculino,168/106,182,Sim,Nenhum,114
+65,Masculino,141/109,134,Sim,Nenhum,75
+50,Feminino,108/73,265,Não,Nenhum,96
+56,Feminino,158/69,187,Sim,Fadiga,89
+41,Feminino,174/85,212,Sim,Múltiplos sintomas,87
+56,Masculino,106/67,159,Sim,Dor no peito e falta de ar,82
+63,Masculino,149/84,272,Não,Dor no peito,90
+80,Masculino,114/103,257,Sim,Fadiga,76
+32,Feminino,155/70,236,Sim,Fadiga,101
+41,Masculino,164/66,280,Sim,Falta de ar,93
+37,Masculino,147/108,161,Sim,Dor no peito e falta de ar,88
+83,Masculino,176/80,245,Sim,Palpitações,111
+78,Feminino,130/63,181,Não,Dor no peito e fadiga,60
+71,Feminino,108/108,256,Sim,Nenhum,85
+85,Masculino,133/93,275,Sim,Nenhum,89
+73,Masculino,139/85,215,Sim,Dor no peito,62
+40,Masculino,108/81,125,Sim,Nenhum,69
+25,Masculino,180/63,178,Sim,Nenhum,76
+29,Masculino,135/102,244,Sim,Nenhum,114
+81,Feminino,131/110,241,Sim,Nenhum,61
+67,Feminino,145/87,225,Sim,Fadiga,98
+66,Masculino,107/85,206,Sim,Nenhum,67
+37,Feminino,117/87,166,Sim,Nenhum,114
+29,Feminino,170/66,132,Sim,Dor no peito,55
+30,Masculino,121/86,244,Sim,Tontura,112
+28,Masculino,148/60,219,Sim,Dor no peito e falta de ar,84
+43,Feminino,171/102,244,Sim,Nenhum,58
+62,Masculino,140/63,132,Sim,Dor no peito,109
+58,Masculino,107/92,140,Não,Nenhum,59
+68,Masculino,151/67,265,Sim,Falta de ar,94
+30,Feminino,174/96,253,Sim,Nenhum,97
+70,Feminino,130/76,221,Sim,Falta de ar,84
+45,Masculino,101/89,279,Não,Múltiplos sintomas,59
+59,Masculino,164/76,153,Não,Tontura,111
+40,Feminino,136/70,232,Sim,Fadiga,94
+76,Masculino,170/79,146,Não,Nenhum,62
+81,Masculino,170/69,189,Sim,Nenhum,76
+38,Feminino,164/91,184,Não,Dor no peito e falta de ar,60
+65,Feminino,135/62,120,Sim,Nenhum,71
+35,Feminino,170/105,229,Sim,Nenhum,115
+81,Masculino,169/62,214,Sim,Nenhum,63
+27,Feminino,146/110,130,Não,Nenhum,70
+67,Masculino,145/109,263,Não,Dor no peito,94
+72,Masculino,130/70,165,Não,Nenhum,102
+84,Feminino,152/102,183,Sim,Dor no peito e falta de ar,61
+49,Masculino,160/74,171,Sim,Dor no peito,74
+77,Masculino,128/61,169,Sim,Nenhum,59
+74,Feminino,144/101,250,Sim,Falta de ar e tontura,89
+46,Masculino,114/76,165,Sim,Falta de ar e tontura,57
+31,Feminino,144/106,200,Sim,Falta de ar e tontura,62
+49,Masculino,132/62,231,Sim,Palpitações,89
+68,Masculino,146/87,137,Não,Palpitações,94
+45,Masculino,138/92,199,Sim,Nenhum,99
+43,Masculino,124/86,217,Sim,Palpitações,94
+61,Feminino,151/95,120,Sim,Nenhum,105
+62,Feminino,159/88,233,Sim,Dor no peito,105
+82,Masculino,110/78,251,Sim,Falta de ar,60
+77,Masculino,139/74,170,Sim,Nenhum,85
+64,Masculino,158/86,267,Sim,Fadiga,86
+50,Masculino,118/101,121,Não,Tontura,111
+31,Feminino,128/71,252,Sim,Falta de ar,113
+79,Masculino,158/68,238,Sim,Falta de ar e tontura,93
+45,Feminino,178/106,249,Sim,Palpitações,83
+82,Masculino,160/88,186,Sim,Dor no peito e falta de ar,72
+74,Feminino,180/75,190,Sim,Fadiga,70
+42,Feminino,140/94,140,Sim,Nenhum,99
+34,Masculino,108/86,224,Sim,Dor no peito,58
+38,Feminino,149/109,269,Não,Nenhum,111
+73,Feminino,161/60,210,Sim,Nenhum,112
+78,Feminino,168/107,259,Sim,Tontura,86
+39,Feminino,155/91,127,Sim,Falta de ar,106
+50,Masculino,159/68,279,Sim,Palpitações,92
+61,Masculino,110/101,229,Sim,Dor no peito,58
+41,Feminino,141/73,236,Sim,Fadiga,79
+42,Feminino,132/65,240,Sim,Dor no peito,115
+47,Masculino,108/109,130,Sim,Dor no peito e fadiga,67
+78,Masculino,179/69,181,Sim,Falta de ar,91
+85,Masculino,159/104,185,Sim,Nenhum,93
+72,Masculino,120/79,147,Sim,Palpitações,91
+68,Feminino,150/105,170,Sim,Fadiga,95
+40,Masculino,138/103,273,Sim,Dor no peito e falta de ar,91
+75,Masculino,144/94,229,Sim,Nenhum,96
+46,Masculino,153/91,147,Sim,Nenhum,112
+78,Feminino,119/87,165,Sim,Dor no peito e fadiga,72
+64,Feminino,159/87,271,Sim,Tontura,108
+84,Masculino,135/88,182,Sim,Falta de ar,97
+49,Feminino,103/91,203,Sim,Nenhum,106
+41,Feminino,135/98,190,Sim,Dor no peito,67
+30,Masculino,152/91,262,Sim,Fadiga,96
+70,Feminino,157/110,124,Sim,Nenhum,99
+40,Feminino,174/83,241,Sim,Nenhum,102
+60,Feminino,145/104,236,Sim,Nenhum,62
+71,Masculino,140/67,257,Não,Fadiga,67
+38,Feminino,135/106,270,Não,Dor no peito,73
+31,Masculino,137/74,212,Sim,Nenhum,89
+33,Feminino,105/63,261,Sim,Dor no peito e fadiga,95
+80,Feminino,113/60,266,Sim,Dor no peito,76
+36,Masculino,132/90,149,Sim,Dor no peito,59
+61,Masculino,119/69,264,Não,Nenhum,70
+32,Feminino,177/98,278,Sim,Dor no peito,83
+83,Feminino,138/97,229,Sim,Falta de ar,94
+72,Masculino,126/100,174,Sim,Nenhum,70
+36,Masculino,120/60,224,Sim,Falta de ar,73
+27,Masculino,136/105,192,Sim,Dor no peito,98
+39,Feminino,180/97,170,Sim,Dor no peito,96
+34,Feminino,118/64,135,Sim,Nenhum,102
+77,Feminino,156/67,239,Sim,Fadiga,115
+42,Feminino,156/65,273,Sim,Dor no peito,75
+63,Feminino,103/65,178,Não,Dor no peito e falta de ar,91
+62,Masculino,134/96,130,Sim,Nenhum,88
+66,Feminino,135/71,269,Sim,Dor no peito e falta de ar,60
