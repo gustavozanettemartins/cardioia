@@ -80,9 +80,9 @@ fase1/
 
 ---
 
-## Links públicos para acesso aos dados (correção FIAP)
+## Links públicos para acesso aos dados
 
-Para que o time da FIAP possa acessar o conjunto completo de dados, seguem os links públicos:
+**Repositório:** [github.com/gustavozanettemartins/cardioia](https://github.com/gustavozanettemartins/cardioia)
 
 | Tipo de dado | Onde acessar | Link / observação |
 |--------------|--------------|-------------------|
@@ -117,3 +117,4 @@ Garanta que o repositório GitHub esteja **público** e que os links acima estej
 - Nenhum dado de pacientes reais é utilizado no dataset CSV; todos os registros são **simulados**.
 - As imagens de ECG vêm de dataset **público do Kaggle** (atribuição acima); os textos são de **domínio público ou divulgação pública** (Gutenberg, OPAS).
 - O projeto é de cunho **acadêmico e didático**; modelos treinados com esses dados não devem ser usados para decisões clínicas sem validação em dados reais e conformidade regulatória.
+
