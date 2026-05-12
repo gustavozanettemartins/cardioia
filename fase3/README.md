@@ -156,20 +156,6 @@ Indicador de alerta (limiares / flag do dispositivo):
 
 Arquivos PNG em [`docs/imagens/`](docs/imagens/).
 
-### Erro `Connection failed to broker`
-
-- Confirmar usuário e senha do **cluster** (HiveMQ → **Access Management**).
-- Hostname só com o nome do servidor; porta **8883**; **TLS** ativo; saída **TCP 8883** na rede/firewall.
-- Persistindo falha: validar o fluxo com o inject de demonstração acima e revisar credenciais.
-
-### Erros `ui_base` / `ui_gauge` (ex.: `reading 'value'`)
-
-1. **`allowTempTheme: "none"`** no `ui_base` — em algumas versões do `node-red-dashboard` exige tema completo. O `flows.json` usa **`allowTempTheme: "true"`** e `angularTheme.palette: "light"`.
-2. **Gauge com `seg1` / `seg2` vazios** — pode produzir `NaN`; no fluxo atual usam-se `33` e `66`.
-3. **Fluxo duplicado** — remover abas antigas de teste, importar de novo o `flows.json` e **Deploy** (evita dois `ui_base` ou widgets órfãos).
-
-Procedimento: importar de novo [`node-red/flows.json`](node-red/flows.json), **Deploy**; se persistir, reiniciar o processo Node-RED.
-
 ---
 
 ## Relatórios
