@@ -1,0 +1,16 @@
+[wokwi]
+version = 1
+# Projeto Wokwi da Fase 3: mantenha `diagram.json` e este arquivo na mesma pasta.
+# Abra esta pasta no Cursor/VS Code (ou abra `diagram.json` aqui) antes de
+# "Wokwi: Start Simulator". Compile antes em `fase3/firmware` (PlatformIO).
+firmware = "../firmware/.pio/build/esp32dev/firmware.bin"
+elf = "../firmware/.pio/build/esp32dev/firmware.elf"
+
+# Serial: uso habitual = painel Wokwi no VS Code/Cursor (ver diagram.json, serialMonitor).
+# Opcional: RFC2217 em localhost (ex.: porta 4000) para cliente serial externo — ver documentação Wokwi.rfc2217ServerPort = 4000
+# Expõe o Serial do ESP32 em TCP (RFC2217) na porta local. No Cursor/VS Code o
+# painel "Wokwi Terminal" pode ficar vazio; use uma destas opções:
+# - Extensão "Serial Monitor" (Microsoft): modo TCP → localhost:4000, baud 115200
+# - PuTTY: conexão Telnet → localhost, porta 4000
+# Documentação: https://docs.wokwi.com/vscode/project-config#serial-port-forwarding
+rfc2217ServerPort = 4000

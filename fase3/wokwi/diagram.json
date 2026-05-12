@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "author": "Gustavo Zanette Martins",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -76.5,
+      "left": -120,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -220,
+      "left": 100,
+      "attrs": { "temperature": "36.5", "humidity": "55" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnPulse",
+      "top": 28.2,
+      "left": 38.6,
+      "attrs": { "color": "green", "label": "Pulso" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnWifi",
+      "top": 28.2,
+      "left": -38.6,
+      "attrs": { "color": "blue", "label": "WiFi" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:15", "dht1:SDA", "green", [ "h0" ] ],
+    [ "esp:3V3", "dht1:VCC", "red", [ "h0" ] ],
+    [ "esp:GND.2", "dht1:GND", "black", [ "h0" ] ],
+    [ "esp:27", "btnPulse:1.l", "green", [ "h0" ] ],
+    [ "esp:GND.3", "btnPulse:2.r", "black", [ "h0" ] ],
+    [ "esp:26", "btnWifi:1.l", "green", [ "h0" ] ],
+    [ "esp:GND.3", "btnWifi:2.r", "black", [ "h0" ] ]
+  ],
+  "dependencies": {},
+  "serialMonitor": {
+    "display": "always",
+    "collapse": false
+  }
+}
