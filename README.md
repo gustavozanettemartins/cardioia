@@ -6,6 +6,7 @@ Projeto acadêmico de IA aplicada à saúde cardiovascular, organizado em fases.
 |--------|-----------|
 | [fase1/](fase1/README.md) | Dataset sintético tabular, textos de referência para NLP, imagens de ECG (Kaggle) — coleta e documentação de dados (Fase 1) |
 | [fase2/](fase2/README.md) | NLP: mapa sintoma–doença, extração por regras (substring), triagem de risco com TF-IDF + scikit-learn (Fase 2) |
+| [fase3/](fase3/README.md) | IoT: ESP32 (Wokwi), DHT22 + simulação de pulso, fila edge, MQTT (HiveMQ), dashboard Node-RED (Fase 3) |
 
 **Autor:** Gustavo Zanette Martins  
 **RM:** 564523
@@ -22,6 +23,7 @@ pip install -r requirements.txt
 - Fase 1 (dataset): na pasta `fase1`, execute `python main.py` (gera `dataset_cardiovascular.csv` nessa pasta).
 - Fase 2 (extração): `python fase2/src/extracao_diagnostico.py`.
 - Fase 2 (notebook): abrir `fase2/notebooks/classificador_risco_tfidf.ipynb`.
+- Fase 3 (IoT): ver [fase3/README.md](fase3/README.md) — firmware Arduino, Wokwi, Node-RED e relatórios em `fase3/docs/`.
 
 Cada pasta tem seu próprio README com instruções detalhadas.
 
