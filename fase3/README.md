@@ -144,9 +144,17 @@ Limiares no dashboard: nós **function** “Alertas” (omissão: temperatura > 
 
 Nó **inject** “Demo (clique — varia valores)” ligado à função **demo aleatório**: a cada disparo gera temperatura, umidade e BPM variados para validar gráfico e gauge sem depender do ESP32.
 
-### Evidências (Parte 2)
+### Evidências
 
-Capturas de tela em [`docs/imagens/`](docs/imagens/) (`dashboard-node-red.png`, `alerta-temperatura.png`).
+Dashboard em `/ui` (gráfico de temperatura, gauge de umidade):
+
+![Dashboard Node-RED — vista geral](docs/imagens/dashboard-node-red.png)
+
+Indicador de alerta (limiares / flag do dispositivo):
+
+![Dashboard Node-RED — alerta](docs/imagens/alerta-temperatura.png)
+
+Arquivos PNG em [`docs/imagens/`](docs/imagens/).
 
 ### Erro `Connection failed to broker`
 
