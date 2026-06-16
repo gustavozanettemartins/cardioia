@@ -27,7 +27,7 @@ fase4/
 ├── README.md
 ├── requirements-fase4.txt
 ├── notebooks/
-│   ├── 01_preprocessamento_ecg.ipynb      # Parte 1 (Colab/local)
+│   ├── 01_preprocessamento_ecg.ipynb      # Parte 1
 │   └── 02_cnn_classificacao_ecg.ipynb     # Parte 2
 ├── src/
 │   ├── preprocessamento.py
@@ -49,7 +49,6 @@ fase4/
 └── docs/
     ├── relatorio_parte1_preprocessamento.md
     ├── relatorio_parte2_cnn_flask.md
-    ├── CHECKLIST_ENTREGA.md               # Checklist final de submissão
     └── imagens/                           # Prints de métricas e Flask
 ```
 
@@ -199,12 +198,6 @@ Modelo padrão: `fase4/models/ecg_transfer_best.keras` (VGG16).
 
 ---
 
-## Google Colab
-
-Os notebooks incluem célula `%pip install ...`. Faça upload do repositório ou monte o Google Drive. Para o dataset completo (~54k imagens), baixe o zip do Kaggle no Colab e habilite **Runtime → GPU**.
-
----
-
 ## Evidências (prints)
 
 Pasta [`docs/imagens/`](docs/imagens/):
@@ -227,12 +220,6 @@ Pasta [`docs/imagens/`](docs/imagens/):
 | [Fase 2](../fase2/README.md) | Triagem textual (NLP) |
 | [Fase 3](../fase3/README.md) | Monitoramento IoT (sinais vitais) |
 | **Fase 4** | Classificação visual de ECG (CNN + Flask) |
-
----
-
-## Checklist de entrega
-
-Ver **[docs/CHECKLIST_ENTREGA.md](docs/CHECKLIST_ENTREGA.md)** — lista completa alinhada ao enunciado da disciplina.
 
 ---
 
