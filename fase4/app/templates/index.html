@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CardioIA — Classificação ECG</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>CardioIA — Assistente Cardiológico Virtual</h1>
+      <p class="subtitle">Fase 4: classificação simulada de imagens ECG por visão computacional</p>
+    </header>
+
+    <aside class="disclaimer" role="alert">
+      <strong>Aviso:</strong> protótipo acadêmico para fins didáticos. Os resultados
+      <strong>não substituem</strong> avaliação, diagnóstico ou conduta médica por profissional habilitado.
+    </aside>
+
+    {% if erro %}
+    <div class="erro">{{ erro }}</div>
+    {% endif %}
+
+    <section class="upload">
+      <form method="post" enctype="multipart/form-data">
+        <label for="imagem">Enviar imagem de ECG (PNG ou JPG)</label>
+        <input type="file" id="imagem" name="imagem" accept=".png,.jpg,.jpeg" required>
+        <button type="submit">Classificar</button>
+      </form>
+    </section>
+
+    {% if resultado %}
+    <section class="resultado">
+      <h2>Resultado da classificação simulada</h2>
+      <div class="grid">
+        <div>
+          {% if preview_url %}
+          <img src="{{ preview_url }}" alt="Imagem enviada" class="preview">
+          {% endif %}
+        </div>
+        <div>
+          <p class="classe-principal">
+            Classe prevista: <strong>{{ resultado.classe_exibicao or resultado.classe }}</strong>
+            {% if resultado.classe_exibicao and resultado.classe_exibicao != resultado.classe %}
+            <span class="codigo-classe">({{ resultado.classe }})</span>
+            {% endif %}
+          </p>
+          <p>Confiança: {{ '%.1f'|format(resultado.confianca * 100) }}%</p>
+          <h3>Probabilidades por classe</h3>
+          <ul class="probs">
+            {% for nome, prob in resultado.probabilidades.items() %}
+            <li>
+              <span>{{ nome }}</span>
+              <div class="barra"><div style="width: {{ prob * 100 }}%"></div></div>
+              <span>{{ '%.1f'|format(prob * 100) }}%</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    <footer>
+      <p>Modelo: VGG16 transfer learning · CardioIA FIAP</p>
+    </footer>
+  </main>
+</body>
+</html>

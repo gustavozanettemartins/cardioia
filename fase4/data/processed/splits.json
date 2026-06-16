@@ -1,0 +1,22 @@
+{
+  "classes": [
+    "F",
+    "N",
+    "Q",
+    "S",
+    "V"
+  ],
+  "class_labels": {
+    "F": "F — batimento de fusão",
+    "N": "N — batimento normal",
+    "Q": "Q — batimento desconhecido / estimulado",
+    "S": "S — ectópico supraventricular",
+    "V": "V — ectópico ventricular"
+  },
+  "dataset_dir": "dataset/ecg_img",
+  "layout": "train_test",
+  "img_size": [
+    224,
+    224
+  ]
+}

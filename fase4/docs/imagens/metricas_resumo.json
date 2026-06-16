@@ -1,0 +1,14 @@
+{
+  "CNN simples": {
+    "accuracy": 0.031947232578147404,
+    "precision_macro": 0.006389446515629481,
+    "recall_macro": 0.2,
+    "f1_macro": 0.012383281458425967
+  },
+  "Transfer Learning (VGG16)": {
+    "accuracy": 0.8034987094924003,
+    "precision_macro": 0.6813293000012501,
+    "recall_macro": 0.8355474480598254,
+    "f1_macro": 0.6889813012991808
+  }
+}
