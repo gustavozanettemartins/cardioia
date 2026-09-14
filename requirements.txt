@@ -7,3 +7,6 @@ pillow>=10.0
 flask>=3.0
 seaborn>=0.13
 numpy>=1.24
+python-dotenv>=1.0
+ibm-watson>=8.0
+ibm-cloud-sdk-core>=3.0
