@@ -5,6 +5,8 @@ Quinta fase do projeto: **assistente conversacional** com NLP para triagem inici
 **Autor:** Gustavo Zanette Martins  
 **RM:** 564523
 
+**Link do vídeo (Fase 5):** https://youtu.be/-CsQbpzzEks
+
 **Aviso:** protótipo acadêmico e simulado; não substitui avaliação médica.
 
 ---
