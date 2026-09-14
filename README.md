@@ -8,6 +8,7 @@ Projeto acadêmico de IA aplicada à saúde cardiovascular, organizado em fases.
 | [fase2/](fase2/README.md) | NLP: mapa sintoma–doença, extração por regras (substring), triagem de risco com TF-IDF + scikit-learn (Fase 2) |
 | [fase3/](fase3/README.md) | IoT: ESP32 (Wokwi), DHT22 + simulação de pulso, fila edge, MQTT (HiveMQ), dashboard Node-RED (Fase 3) |
 | [fase4/](fase4/README.md) | Visão computacional: pré-processamento ECG, CNN + transfer learning (VGG16), métricas, protótipo Flask (Fase 4) |
+| [fase5/](fase5/README.md) | Assistente conversacional: NLP (Watson/mock), triagem cardiológica, chat Flask (Fase 5) |
 
 **Autor:** Gustavo Zanette Martins  
 **RM:** 564523
@@ -26,16 +27,9 @@ pip install -r requirements.txt
 - Fase 2 (notebook): abrir `fase2/notebooks/classificador_risco_tfidf.ipynb`.
 - Fase 3 (IoT): ver [fase3/README.md](fase3/README.md) — firmware Arduino, Wokwi, Node-RED e relatórios em `fase3/docs/`.
 - Fase 4 (visão computacional): ver [fase4/README.md](fase4/README.md) — treino CNN (WSL2+GPU recomendado), Flask, relatórios e [checklist de entrega](fase4/docs/CHECKLIST_ENTREGA.md).
+- Fase 5 (assistente conversacional): ver [fase5/README.md](fase5/README.md) — chat Flask na porta 5001, mock local ou Watson Assistant, relatório em `fase5/docs/`.
 
 Cada pasta tem seu próprio README com instruções detalhadas.
-
----
-
-## Fase 2 — vídeo no YouTube (não listado)
-
-**Link do vídeo (Fase 2):** `https://youtu.be/JEI_BCRCK6U`
-
-Instruções detalhadas: [fase2/README.md](fase2/README.md).
 
 ---
 
