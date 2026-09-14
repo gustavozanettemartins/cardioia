@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CardioIA — Assistente Conversacional</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>CardioIA — Assistente Cardiológico</h1>
+      <p class="subtitle">Fase 5: triagem conversacional com NLP</p>
+    </header>
+
+    <aside class="disclaimer" role="alert">
+      <strong>Aviso:</strong> protótipo acadêmico para fins didáticos. As respostas
+      <strong>não substituem</strong> avaliação, diagnóstico ou conduta médica por profissional habilitado.
+      Em emergência, ligue <strong>192 (SAMU)</strong>.
+    </aside>
+
+    <section class="chat-container" aria-label="Conversa com o assistente">
+      <div id="messages" class="messages" role="log" aria-live="polite"></div>
+      <div id="typing" class="typing" hidden>
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        Assistente digitando...
+      </div>
+      <form id="chat-form" class="chat-form">
+        <label for="message-input" class="sr-only">Sua mensagem</label>
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Digite sua mensagem..."
+          autocomplete="off"
+          required
+        >
+        <button type="submit" id="send-btn">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>CardioIA — FIAP · Gustavo Zanette Martins (RM 564523)</p>
+    </footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>

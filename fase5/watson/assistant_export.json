@@ -1,0 +1,402 @@
+{
+  "intents": [
+    {
+      "intent": "agendar_consulta",
+      "examples": [
+        {
+          "text": "como agendar cardiologista"
+        },
+        {
+          "text": "preciso de consulta"
+        },
+        {
+          "text": "quero marcar consulta"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "despedida",
+      "examples": [
+        {
+          "text": "até logo"
+        },
+        {
+          "text": "obrigada"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "tchau"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "emergencia",
+      "examples": [
+        {
+          "text": "desmaiei agora"
+        },
+        {
+          "text": "dor forte no peito"
+        },
+        {
+          "text": "dor no peito irradiando para o braço esquerdo"
+        },
+        {
+          "text": "não consigo respirar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "informacao_geral",
+      "examples": [
+        {
+          "text": "me explique hipertensão"
+        },
+        {
+          "text": "o que é arritmia"
+        },
+        {
+          "text": "sintomas de infarto"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "relatar_sintomas",
+      "examples": [
+        {
+          "text": "apresento palpitações"
+        },
+        {
+          "text": "estou com cansaço constante"
+        },
+        {
+          "text": "há três dias sinto aperto no tórax"
+        },
+        {
+          "text": "sinto dor no peito"
+        },
+        {
+          "text": "tenho falta de ar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "boa tarde"
+        },
+        {
+          "text": "bom dia"
+        },
+        {
+          "text": "oi, preciso de ajuda"
+        },
+        {
+          "text": "olá"
+        },
+        {
+          "text": "pode me ajudar?"
+        }
+      ],
+      "description": "Usuário inicia a conversa"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "intensidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "forte",
+          "synonyms": [
+            "grave",
+            "insuportável",
+            "intensa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "leve",
+          "synonyms": [
+            "fraca",
+            "suave"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "moderada",
+          "synonyms": [
+            "média",
+            "regular"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sintoma",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cansaço",
+          "synonyms": [
+            "cansaço constante",
+            "fadiga"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dor no peito",
+          "synonyms": [
+            "aperto no peito",
+            "dor torácica"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "falta de ar",
+          "synonyms": [
+            "dispneia",
+            "falta de ar ao deitar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "inchaço",
+          "synonyms": [
+            "inchaço nos tornozelos",
+            "pernas inchadas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "palpitações",
+          "synonyms": [
+            "batimento irregular",
+            "coração acelerado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tontura",
+          "synonyms": [
+            "vertigem",
+            "visão turva"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Sou o assistente cardiológico do CardioIA. Como você está se sentindo hoje?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Desculpe, não entendi. Pode descrever seus sintomas ou perguntar sobre arritmia, infarto ou hipertensão?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_6_1787666653343",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pelos sintomas relatados, busque atendimento de emergência imediatamente. Ligue 192 (SAMU) ou vá ao pronto-socorro mais próximo. Este assistente não substitui avaliação médica."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#emergencia",
+      "dialog_node": "node_3_1787666419336",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Foi um prazer ajudar. Cuide da sua saúde cardiovascular!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#despedida",
+      "dialog_node": "node_6_1787666653343",
+      "previous_sibling": "node_8_1787666641208"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi. Qual a intensidade dos sintomas (leve, moderada ou forte)? Há quanto tempo você os sente?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#relatar_sintomas",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1787666456456",
+      "previous_sibling": "node_9_1787666444965"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Posso fornecer informações educativas sobre arritmia, infarto e hipertensão. Qual tema deseja saber mais?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#informacao_geral",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1787666596595",
+      "previous_sibling": "node_8_1787666456456"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para agendar consulta cardiológica, entre em contato com seu plano de saúde, UBS ou hospital da região."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#agendar_consulta",
+      "dialog_node": "node_8_1787666641208",
+      "previous_sibling": "node_8_1787666596595"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Posso ajudar com triagem de sintomas, informações sobre condições cardíacas ou orientação para consulta. Como você está se sentindo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#saudacao",
+      "dialog_node": "node_9_1787666444965",
+      "previous_sibling": "node_3_1787666419336"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Com base nos sintomas relatados, recomendo procurar um cardiologista para avaliação. Se os sintomas piorarem, ligue 192. Este assistente não diagnostica."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1787666456456",
+      "conditions": "#relatar_sintomas && @intensidade",
+      "dialog_node": "node_9_1787666479598"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "",
+  "name": "CardioIA-dialog"
+}

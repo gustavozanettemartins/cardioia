@@ -1,0 +1,10 @@
+# Provedor: "mock" (local) ou "watson" (IBM Cloud)
+CARDIOIA_ASSISTANT=mock
+
+# Credenciais IBM Watson Assistant
+WATSON_API_KEY=
+WATSON_URL=https://api.au-syd.assistant.watson.cloud.ibm.com
+
+# --- Opção A: Classic Dialog Skill (recomendado para CardioIA-dialog) ---
+WATSON_API_VERSION=v1
+WATSON_WORKSPACE_ID=
